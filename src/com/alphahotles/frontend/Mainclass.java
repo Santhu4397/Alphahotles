@@ -10,6 +10,7 @@ public class Mainclass {
 
 	public static void menu() 
 	{
+		for(;;) {
 		System.out.println("1. Signup");
 		System.out.println("2. Login");
 		System.out.println("Any other key for exit");
@@ -26,10 +27,11 @@ public class Mainclass {
 		case 2: System.out.println("login selected");
 		loginpage.userlogin();
 			   break;
-		default: System.out.println("exit");
+		default:System.out.println("Exit"); 
+			System.exit(0);
 
 		}
-	
+		}
 	}
 	
 	

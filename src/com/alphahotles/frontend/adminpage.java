@@ -14,6 +14,7 @@ public class adminpage
 	static Adminservice asi=new Adminservice();
 	public static void Adminmenu() 
 	{
+		for(;;) {
 	System.out.println("1. inserthotels");
     System.out.println("2. insertroom");
 	System.out.println("3. selectallhotels");
@@ -56,7 +57,8 @@ public class adminpage
 		   break;
 		   
 	default: System.out.println("exit");
-
+	System.exit(0);
+	}
 	}
 	}
 	
